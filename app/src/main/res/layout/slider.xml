@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="350dp">
+
+    <ImageView
+        android:id="@+id/slider1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/slider_wikitoy_1"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvslider1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprende con nosotros"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="15dp"
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

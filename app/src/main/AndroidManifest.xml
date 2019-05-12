@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".LeccionesActivity" />
+        <activity android:name=".LeccionesActivity" android:parentActivityName=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Datos_ChildActivity" />
-        <activity android:name=".TablasActivity"></activity>
+        <activity android:name=".TablasActivity" android:parentActivityName=".LeccionesActivity"></activity>
     </application>
 
 </manifest>

@@ -5,9 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="10dp"
+
     android:background="@mipmap/fondopapel"
     tools:context=".TablasActivity">
+
+    <include layout="@layout/toolbar">
+    </include>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,6 +20,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:orientation="vertical">
 
             <ImageView
@@ -37,23 +42,71 @@
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
-                android:src="@mipmap/tabla_del_1"
+                android:src="@mipmap/tabla_del_3"
                 android:scaleType="fitCenter" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
-                android:src="@mipmap/tabla_del_1"
+                android:src="@mipmap/tabla_del_4"
                 android:scaleType="fitCenter" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
-                android:src="@mipmap/tabla_del_1"
+                android:src="@mipmap/tabla_del_5"
                 android:scaleType="fitCenter" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="130dp"
+                android:src="@mipmap/tabla_del_6"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="130dp"
+                android:src="@mipmap/tabla_del_7"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="130dp"
+                android:src="@mipmap/tabla_del_8"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="130dp"
+                android:src="@mipmap/tabla_del_9"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="130dp"
+                android:src="@mipmap/tabla_del_10"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="130dp"
+                android:src="@mipmap/tabla_del_11"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="130dp"
+                android:src="@mipmap/tabla_del_12"
+                android:scaleType="fitCenter" />
 
         </LinearLayout>
 
