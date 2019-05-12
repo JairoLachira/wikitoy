@@ -18,9 +18,7 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //tvTituloNombre = (TextView)findViewById(R.id.tvTituloNombre);
         SharedPreferences prefs = getSharedPreferences("Share", Context.MODE_PRIVATE );
-        //tvTituloNombre.setText("¿Qué deseas hacer?");
         showToolbar("¿Qué deseas hacer " + prefs.getString("nombreuser","") + "?", false);
     }
 
@@ -32,10 +30,15 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
     }
 
-
     public void iralecciones(View view)
     {
         Intent i=new Intent(this, LeccionesActivity.class);
+        startActivity(i);
+    }
+
+    public void iraejercicios(View view)
+    {
+        Intent i=new Intent(this, EjerciciosActivity.class);
         startActivity(i);
     }
 }

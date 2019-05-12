@@ -12,7 +12,7 @@ public class LeccionesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lecciones);
-        showToolbar("Operaciones", true);
+        showToolbar("Lecciones", true);
     }
 
     public void showToolbar(String title, boolean upButton)
@@ -24,9 +24,26 @@ public class LeccionesActivity extends AppCompatActivity {
     }
 
     public void iratablasdesuma(View view) {
-        Intent i=new Intent(this, TablasActivity.class);
-        startActivity(i);
+        seguntipo("Suma");
     }
 
 
+    public void iratablasderesta(View view) {
+        seguntipo("Resta");
+    }
+
+    public void iratablasdemulti(View view) {
+        seguntipo("Multiplicación");
+    }
+
+    public void iratablasdedivi(View view) {
+        seguntipo("División");
+    }
+
+    void seguntipo(String tipo)
+    {
+        Intent i=new Intent(this, TablasActivity.class);
+        i.putExtra("tabla", tipo);
+        startActivity(i);
+    }
 }

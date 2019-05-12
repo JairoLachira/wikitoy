@@ -62,7 +62,7 @@ public class Datos_ChildActivity extends AppCompatActivity  {
     {
         String nombreUser = etNombre.getText().toString();
 
-        if(nombreUser.trim().length()>0)
+        if(nombreUser.trim().length()==0)
         {
             Intent i = new Intent(this, MainActivity.class);
             startActivity(i);

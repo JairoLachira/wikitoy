@@ -8,6 +8,7 @@
     cardview:cardCornerRadius="10dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
+    android:onClick="iraejercicios"
     cardview:cardElevation="10dp"
     >
 

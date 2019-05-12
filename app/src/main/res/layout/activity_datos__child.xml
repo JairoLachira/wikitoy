@@ -34,7 +34,6 @@
         android:hint="Escribe tu nombre"
         android:layout_margin="15dp"
         android:textSize="20sp"
-        android:textStyle="bold"
         />
 
     <Button

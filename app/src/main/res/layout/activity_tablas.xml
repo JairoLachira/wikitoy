@@ -20,93 +20,117 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:padding="10dp"
+
             android:orientation="vertical">
 
-            <ImageView
-            android:layout_width="wrap_content"
-            android:gravity="center"
-            android:layout_height="130dp"
-            android:src="@mipmap/tabla_del_1"
-            android:scaleType="fitCenter" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:onClick="irTabla1"
+                android:src="@mipmap/tabla_del_1" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_2"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla2"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_3"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla3"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_4"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla4"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_5"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla5"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_6"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla6"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_7"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla7"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_8"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla8"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_9"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla9"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_10"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla10"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
                 android:src="@mipmap/tabla_del_11"
-                android:scaleType="fitCenter" />
+                android:onClick="irTabla11"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:gravity="center"
                 android:layout_height="130dp"
+                android:onClick="irTabla12"
                 android:src="@mipmap/tabla_del_12"
-                android:scaleType="fitCenter" />
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"/>
 
         </LinearLayout>
 
