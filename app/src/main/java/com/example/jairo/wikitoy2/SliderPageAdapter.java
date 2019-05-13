@@ -29,7 +29,7 @@ public class SliderPageAdapter extends PagerAdapter
         View sliderLayout=inflater.inflate(R.layout.slider,null);
 
         ImageView sliderImg=sliderLayout.findViewById(R.id.slider1);
-        TextView sliderText=sliderLayout.findViewById(R.id.tvslider1);
+        TextView sliderText=sliderLayout.findViewById(R.id.tvslider);
 
         sliderImg.setImageResource(mList.get(position).getImage());
         sliderText.setText(mList.get(position).getTitle());

@@ -81,21 +81,21 @@
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal">
 
-                <ImageButton
+               <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@mipmap/imgpotencia"
+                    android:src="@mipmap/imgpdf"
                     android:scaleType="fitCenter"
-                    android:onClick="iratutoriales"
+                    android:onClick="irapdf"
                     android:background="@android:color/transparent"
                     android:layout_weight="5"/>
 
                 <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@mipmap/imgradi"
+                    android:src="@mipmap/imgpdf"
+                    android:onClick="iratutoriales"
                     android:scaleType="fitCenter"
-                    android:onClick="irapdf"
                     android:background="@android:color/transparent"
                     android:layout_weight="5"/>
 

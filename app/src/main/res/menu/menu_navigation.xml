@@ -13,10 +13,9 @@
     android:title="Webs"
     android:icon="@drawable/ic_airplay_black_24dp"
     />
-    <item
-        android:id="@+id/bibliotecasItem"
-    android:title="Bibliotecas"
-    android:icon="@drawable/ic_place_black_24dp"
+    <item android:id="@+id/perfilItem"
+    android:title="Perfil"
+    android:icon="@drawable/ic_person_black_24dp"
     />
     <item
         android:id="@+id/desarrolladorItem"

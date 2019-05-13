@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
@@ -14,7 +15,15 @@ public class LeccionesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lecciones);
-        showToolbar("Lecciones", true);
+        try
+        {
+            showToolbar("Lecciones", true);
+        }
+        catch(Exception e)
+        {
+            Toast.makeText(this,"oncreate lecciones activity" + e.toString(),Toast.LENGTH_LONG).show();
+        }
+
     }
 
     public void showToolbar(String title, boolean upButton)
@@ -26,7 +35,14 @@ public class LeccionesActivity extends AppCompatActivity {
     }
 
     public void iratablasdesuma(View view) {
-        seguntipo("Suma");
+        try
+        {
+        seguntipo("suma");
+        }
+        catch(Exception e)
+        {
+            Toast.makeText(this,"metodo segun tipo" + e.toString(),Toast.LENGTH_LONG).show();
+        }
     }
 
     public void iratablasderesta(View view) {
@@ -43,9 +59,12 @@ public class LeccionesActivity extends AppCompatActivity {
 
     void seguntipo(String tipo)
     {
-        Intent i=new Intent(this, TablasActivity.class);
-        i.putExtra("tabla", tipo);
-        startActivity(i);
+
+            Intent i=new Intent(this, TablasActivity.class);
+            i.putExtra("tabla", tipo);
+            startActivity(i);
+
+
     }
 
     public void irapdf(View view) {
@@ -57,4 +76,6 @@ public class LeccionesActivity extends AppCompatActivity {
         Intent i=new Intent(this, TutorialesActivity.class);
         startActivity(i);
     }
+
+
 }

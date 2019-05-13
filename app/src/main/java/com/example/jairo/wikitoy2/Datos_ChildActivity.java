@@ -28,9 +28,9 @@ public class Datos_ChildActivity extends AppCompatActivity  {
         sliderPager = (ViewPager)findViewById(R.id.slider_page);
 
         lstSlider = new ArrayList<>();
-        lstSlider.add(new slider(R.mipmap.slider_wikitoy_1,"Aprende con nosotros 2"));
-        lstSlider.add(new slider(R.mipmap.slider_wikitoy_2,"Aprende con nosotros 3"));
-        lstSlider.add(new slider(R.mipmap.slider_wikitoy_3,"Aprende con nosotros 4"));
+        lstSlider.add(new slider(R.mipmap.slider1,"Aprende con wititoy"));
+        lstSlider.add(new slider(R.mipmap.slider2,"Entrena tu cerebro"));
+        lstSlider.add(new slider(R.mipmap.slider3,"Sé el primero en clase"));
 
         SliderPageAdapter adapter = new SliderPageAdapter(this, lstSlider);
         sliderPager.setAdapter(adapter);
@@ -62,7 +62,7 @@ public class Datos_ChildActivity extends AppCompatActivity  {
     {
         String nombreUser = etNombre.getText().toString();
 
-        if(nombreUser.trim().length()==0)
+        if(nombreUser.trim().length()>0)
         {
             Intent i = new Intent(this, MainActivity.class);
             startActivity(i);

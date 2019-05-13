@@ -3,6 +3,7 @@ package com.example.jairo.wikitoy2;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 public class EjerciciosActivity extends AppCompatActivity {
 
@@ -19,5 +20,10 @@ public class EjerciciosActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
+    }
+
+    public void comprobar(View view)
+    {
+
     }
 }

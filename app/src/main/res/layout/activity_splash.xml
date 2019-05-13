@@ -5,30 +5,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimaryDark"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="WikiToy"
-        android:textStyle="bold"
-        android:textSize="35dp"
-        android:gravity="center"
-        android:textColor="@android:color/white"
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/letras_wikitoy"
         />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@mipmap/carawikitoy"/>
+        android:src="@mipmap/carawikitoy2"/>
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@mipmap/loading8"
+        android:src="@mipmap/loading6"
         />
 
 </LinearLayout>

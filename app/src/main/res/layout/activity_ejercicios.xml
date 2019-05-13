@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@mipmap/fondopapel"
-    tools:context=".LeccionesActivity">
+    tools:context=".EjerciciosActivity">
 
     <include layout="@layout/toolbar">
     </include>
@@ -26,26 +26,74 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-                <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_weight="5"
-                    android:onClick="iratablasdesuma"
-                    android:scaleType="fitCenter"
-                    android:src="@mipmap/imgsuma"
-                    android:background="@android:color/transparent"/>
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="5"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:editable="false"
+                    />
 
-                <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@mipmap/imgresta"
-                    android:layout_weight="5"
-                    android:scaleType="fitCenter"
-                    android:onClick="iratablasderesta"
-                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:editable="false"
+                    />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="="
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:editable="false"
+                    />
+
+                <EditText
+                    android:id="@+id/etresultado1"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/boton_redondo"
+                    android:onClick="comprobar"
+                    android:text="="
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    />
 
             </LinearLayout>
 
@@ -53,25 +101,73 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@mipmap/imgmulti"
-                    android:scaleType="fitCenter"
-                    android:onClick="iratablasdemulti"
-                    android:layout_weight="5"
-                    android:background="@android:color/transparent"/>
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="10"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:editable="false"
+                    />
 
-                <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@mipmap/imagedivi"
-                    android:onClick="iratablasdedivi"
-                    android:scaleType="fitCenter"
-                    android:layout_weight="5"
-                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:editable="false"
+                    />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="5"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="="
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:editable="false"
+                    />
+
+                <EditText
+                    android:id="@+id/etresultado2"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/boton_redondo"
+                    android:onClick="comprobar"
+                    android:text="="
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    />
 
             </LinearLayout>
 
@@ -79,25 +175,77 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@mipmap/imgpotencia"
-                    android:scaleType="fitCenter"
-                    android:background="@android:color/transparent"
-                    android:layout_weight="5"/>
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="4"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:editable="false"
+                    />
 
-                <ImageButton
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@mipmap/imgradi"
-                    android:scaleType="fitCenter"
-                    android:background="@android:color/transparent"
-                    android:layout_weight="5"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="x"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:editable="false"
+                    />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="7"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="="
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:editable="false"
+                    />
+
+                <EditText
+                    android:id="@+id/etresultado3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/boton_redondo"
+                    android:onClick="comprobar"
+                    android:text="="
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    />
 
             </LinearLayout>
+
+
 
         </LinearLayout>
 

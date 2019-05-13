@@ -15,10 +15,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements
     MainFragment.OnFragmentInteractionListener,
-        DeveloperFragment.OnFragmentInteractionListener
+    DeveloperFragment.OnFragmentInteractionListener,
+    PerfilFragment.OnFragmentInteractionListener,
+    WebsFragment.OnFragmentInteractionListener
 {
 
     private TextView tvTituloNombre;
@@ -50,6 +53,18 @@ public class MainActivity extends AppCompatActivity implements
                         transition.replace(R.id.container, inicioFragment);
                         transition.commit();
                         break;
+                    case R.id.websItem:
+                        WebsFragment websFragment =new WebsFragment();
+                        transition =  getSupportFragmentManager().beginTransaction();
+                        transition.replace(R.id.container, websFragment);
+                        transition.commit();
+                        break;
+                    case R.id.perfilItem:
+                        PerfilFragment perfilFragment =new PerfilFragment();
+                        transition =  getSupportFragmentManager().beginTransaction();
+                        transition.replace(R.id.container, perfilFragment);
+                        transition.commit();
+                        break;
                     case R.id.desarrolladorItem:
                         DeveloperFragment developerFragment =new DeveloperFragment();
                         transition =  getSupportFragmentManager().beginTransaction();
@@ -74,8 +89,16 @@ public class MainActivity extends AppCompatActivity implements
 
     public void iralecciones(View view)
     {
-        Intent i=new Intent(this, LeccionesActivity.class);
-        startActivity(i);
+        try
+        {
+            Intent i=new Intent(this, LeccionesActivity.class);
+            startActivity(i);
+        }
+        catch(Exception e)
+        {
+            Toast.makeText(this,"void i a lecciones" + e.toString(),Toast.LENGTH_LONG).show();
+        }
+
     }
 
     public void iraejercicios(View view)
