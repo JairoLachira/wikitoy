@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+    android:id="@+id/inicioItem"
+    android:title="Inicio"
+    android:icon="@drawable/ic_home_black_24dp"
+    />
+    <item
+        android:id="@+id/tutorialesItem"
+    android:title="Tutoriales"
+    android:icon="@drawable/ic_play_circle_filled_black_24dp"
+    />
+    <item
+        android:id="@+id/websItem"
+    android:title="Webs"
+    android:icon="@drawable/ic_airplay_black_24dp"
+    />
+    <item
+        android:id="@+id/bibliotecasItem"
+    android:title="Bibliotecas"
+    android:icon="@drawable/ic_place_black_24dp"
+    />
+    <item
+        android:id="@+id/desarrolladorItem"
+    android:title="Desarrollador"
+    android:icon="@drawable/ic_code_black_24dp"
+    />
+
+</menu>
