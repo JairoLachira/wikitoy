@@ -9,11 +9,6 @@
     android:icon="@drawable/ic_home_black_24dp"
     />
     <item
-        android:id="@+id/tutorialesItem"
-    android:title="Tutoriales"
-    android:icon="@drawable/ic_play_circle_filled_black_24dp"
-    />
-    <item
         android:id="@+id/websItem"
     android:title="Webs"
     android:icon="@drawable/ic_airplay_black_24dp"

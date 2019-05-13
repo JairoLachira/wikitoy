@@ -21,6 +21,7 @@
             <include layout="@layout/cardview_lecciones"></include>
             <include layout="@layout/cardview_ejercicios"></include>
             <include layout="@layout/cardview_estadisticas"></include>
+            <include layout="@layout/cardview_maps"></include>
 
         </LinearLayout>
 

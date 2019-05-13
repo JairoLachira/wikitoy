@@ -17,12 +17,13 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements
-    MainFragment.OnFragmentInteractionListener, TutorialesFragment.OnFragmentInteractionListener,
+    MainFragment.OnFragmentInteractionListener,
         DeveloperFragment.OnFragmentInteractionListener
 {
 
     private TextView tvTituloNombre;
     MenuItem inicioItem, tutotialesItem;
+
     private BottomNavigationView menuItem;
     FragmentTransaction transition = null;
     @Override
@@ -47,12 +48,6 @@ public class MainActivity extends AppCompatActivity implements
                         MainFragment inicioFragment = new MainFragment();
                         transition =  getSupportFragmentManager().beginTransaction();
                         transition.replace(R.id.container, inicioFragment);
-                        transition.commit();
-                        break;
-                    case R.id.tutorialesItem:
-                        TutorialesFragment tutorialesFragment =new TutorialesFragment();
-                        transition =  getSupportFragmentManager().beginTransaction();
-                        transition.replace(R.id.container, tutorialesFragment);
                         transition.commit();
                         break;
                     case R.id.desarrolladorItem:
@@ -86,6 +81,12 @@ public class MainActivity extends AppCompatActivity implements
     public void iraejercicios(View view)
     {
         Intent i=new Intent(this, EjerciciosActivity.class);
+        startActivity(i);
+    }
+
+    public void iramapas(View view)
+    {
+        Intent i=new Intent(this, MapsActivity.class);
         startActivity(i);
     }
 

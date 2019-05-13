@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.github.barteksc.pdfviewer.PDFView;
+
 public class LeccionesActivity extends AppCompatActivity {
 
     @Override
@@ -27,7 +29,6 @@ public class LeccionesActivity extends AppCompatActivity {
         seguntipo("Suma");
     }
 
-
     public void iratablasderesta(View view) {
         seguntipo("Resta");
     }
@@ -44,6 +45,16 @@ public class LeccionesActivity extends AppCompatActivity {
     {
         Intent i=new Intent(this, TablasActivity.class);
         i.putExtra("tabla", tipo);
+        startActivity(i);
+    }
+
+    public void irapdf(View view) {
+        Intent i=new Intent(this, PdfActivity.class);
+        startActivity(i);
+    }
+
+    public void iratutoriales(View view) {
+        Intent i=new Intent(this, TutorialesActivity.class);
         startActivity(i);
     }
 }

@@ -86,6 +86,7 @@
                     android:layout_height="150dp"
                     android:src="@mipmap/imgpotencia"
                     android:scaleType="fitCenter"
+                    android:onClick="iratutoriales"
                     android:background="@android:color/transparent"
                     android:layout_weight="5"/>
 
@@ -94,6 +95,7 @@
                     android:layout_height="150dp"
                     android:src="@mipmap/imgradi"
                     android:scaleType="fitCenter"
+                    android:onClick="irapdf"
                     android:background="@android:color/transparent"
                     android:layout_weight="5"/>
 
