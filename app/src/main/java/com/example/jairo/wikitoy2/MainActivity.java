@@ -107,6 +107,12 @@ public class MainActivity extends AppCompatActivity implements
         startActivity(i);
     }
 
+    public void iraestadisticas(View view)
+    {
+        Intent i=new Intent(this, EstadisticasActivity.class);
+        startActivity(i);
+    }
+
     public void iramapas(View view)
     {
         Intent i=new Intent(this, MapsActivity.class);

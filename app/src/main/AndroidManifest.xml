@@ -23,17 +23,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".LeccionesActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".MainActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LeccionesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SplashActivity"></activity>
         <activity android:name=".Datos_ChildActivity" />
         <activity
             android:name=".TablasActivity"
@@ -41,7 +42,9 @@
         <activity
             android:name=".ListTablaActivity"
             android:parentActivityName=".TablasActivity" />
-        <activity android:name=".EjerciciosActivity" />
+        <activity android:name=".EjerciciosActivity">
+
+        </activity>
         <activity
             android:name=".PdfActivity"
             android:parentActivityName=".LeccionesActivity" />
@@ -62,7 +65,8 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".EstadisticasActivity"></activity>
     </application>
 
 </manifest>

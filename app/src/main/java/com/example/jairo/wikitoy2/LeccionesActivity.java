@@ -37,7 +37,7 @@ public class LeccionesActivity extends AppCompatActivity {
     public void iratablasdesuma(View view) {
         try
         {
-        seguntipo("suma");
+            seguntipo("suma");
         }
         catch(Exception e)
         {
@@ -59,11 +59,9 @@ public class LeccionesActivity extends AppCompatActivity {
 
     void seguntipo(String tipo)
     {
-
             Intent i=new Intent(this, TablasActivity.class);
             i.putExtra("tabla", tipo);
             startActivity(i);
-
 
     }
 

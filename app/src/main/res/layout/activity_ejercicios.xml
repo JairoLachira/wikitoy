@@ -30,65 +30,34 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="5"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:editable="false"
-                    />
-
                 <TextView
-                    android:layout_width="50dp"
+                    android:layout_width="200dp"
                     android:layout_height="50dp"
-                    android:text="+"
+                    android:text="a) 5     +     8     = "
                     android:textSize="25dp"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:editable="false"
-                    />
-
-                <EditText
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="8"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:editable="false"
-                    />
-
-                <TextView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="="
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:textColor="@android:color/black"
-                    android:editable="false"
                     />
 
                 <EditText
                     android:id="@+id/etresultado1"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
                     android:gravity="center"
                     android:inputType="number"
-                    />
+                    android:textSize="25dp"
+
+                    android:textStyle="bold" />
 
                 <Button
+                    android:id="@+id/btnop1"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:background="@drawable/boton_redondo"
-                    android:onClick="comprobar"
-                    android:text="="
+                    android:onClick="comprobar1"
+                    android:text="\?"
                     android:layout_marginLeft="10dp"
                     android:textColor="#ffffff"
                     android:textSize="30dp"
@@ -104,46 +73,14 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="10"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:editable="false"
-                    />
-
                 <TextView
-                    android:layout_width="50dp"
+                    android:layout_width="200dp"
                     android:layout_height="50dp"
-                    android:text="-"
+                    android:text="b) 1    +     9     = "
                     android:textSize="25dp"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:editable="false"
-                    />
-
-                <EditText
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="5"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:editable="false"
-                    />
-
-                <TextView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="="
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:textColor="@android:color/black"
-                    android:editable="false"
                     />
 
                 <EditText
@@ -157,12 +94,13 @@
                     />
 
                 <Button
+                    android:id="@+id/btnop2"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:background="@drawable/boton_redondo"
-                    android:onClick="comprobar"
-                    android:text="="
+                    android:onClick="comprobar2"
+                    android:text="\?"
                     android:layout_marginLeft="10dp"
                     android:textColor="#ffffff"
                     android:textSize="30dp"
@@ -178,46 +116,14 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="4"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:editable="false"
-                    />
-
                 <TextView
-                    android:layout_width="50dp"
+                    android:layout_width="200dp"
                     android:layout_height="50dp"
-                    android:text="x"
+                    android:text="c) 30    +   12   = "
                     android:textSize="25dp"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:editable="false"
-                    />
-
-                <EditText
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="7"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:editable="false"
-                    />
-
-                <TextView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:text="="
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:textColor="@android:color/black"
-                    android:editable="false"
                     />
 
                 <EditText
@@ -231,19 +137,156 @@
                     />
 
                 <Button
+                    android:id="@+id/btnop3"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/boton_redondo"
-                    android:onClick="comprobar"
-                    android:text="="
                     android:layout_marginLeft="10dp"
+                    android:background="@drawable/boton_redondo"
+                    android:onClick="comprobar3"
+                    android:text="\?"
                     android:textColor="#ffffff"
                     android:textSize="30dp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="d) 25    +   15   = "
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/etresultado4"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+                <Button
+                    android:id="@+id/btnop4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/boton_redondo"
+                    android:onClick="comprobar4"
+                    android:text="\?"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="e) 14    +   17   = "
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/etresultado5"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+                <Button
+                    android:id="@+id/btnop5"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/boton_redondo"
+                    android:onClick="comprobar5"
+                    android:text="\?"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="f) 18    +   30   = "
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/etresultado6"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+
+                <Button
+                    android:id="@+id/btnop6"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/boton_redondo"
+                    android:onClick="comprobar6"
+                    android:text="\?"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="150dp"
+                android:background="@drawable/boton_redondo_celeste"
+                android:text="Estadisticas"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:onClick="verestadisticas"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
 
 
 

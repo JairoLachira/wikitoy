@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EstadisticasActivity">
+
+    <include layout="@layout/toolbar">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/imgsuma"
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Estadísticas en suma:"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/tvcorrectassuma"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="0 Correctas"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/holo_green_dark"/>
+
+                    <TextView
+                        android:id="@+id/tvincorrectassuma"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="0 Incorrectas"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_red_light"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/imgresta"
+                android:background="@android:color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Estadísticas en resta:"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/tvcorrectasresta"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="0 Correctas"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/holo_green_dark"/>
+
+                <TextView
+                    android:id="@+id/tvincorrectasresta"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="0 Incorrectas"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_red_light"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/imgmulti"
+                android:background="@android:color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Multiplicación:"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/tvcorrectasmulti"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="0 Correctas"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/holo_green_dark"/>
+
+                <TextView
+                    android:id="@+id/tvincorrectasmulti"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="0 Incorrectas"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_red_light"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/imagedivi"
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="División:"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/tvcorrectasdivi"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="0 Correctas"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/holo_green_dark"/>
+
+                    <TextView
+                        android:id="@+id/tvincorrectasdivi"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="0 Incorrectas"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_red_light"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
