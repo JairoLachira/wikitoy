@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_suma"
+        android:title="Suma"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_suma_circle_black_24dp"
+        />
+    <item
+        android:id="@+id/item_multi"
+        android:title="Multiplicación"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_multi_black_24dp"
+        />
+    <item
+        android:id="@+id/item_resta"
+        android:title="Resta"
+        />
+    <item
+        android:id="@+id/item_divi"
+        android:title="División"
+        />
+</menu>

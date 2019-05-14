@@ -20,7 +20,7 @@ public class EstadisticasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_estadisticas);
-        showToolbar("Estadísticas", true);
+        showToolbar("Estadísticas", false);
 
         tvcsuma = (TextView)findViewById(R.id.tvcorrectassuma);
         tvisuma = (TextView)findViewById(R.id.tvincorrectassuma);

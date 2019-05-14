@@ -37,7 +37,7 @@ public class LeccionesActivity extends AppCompatActivity {
     public void iratablasdesuma(View view) {
         try
         {
-            seguntipo("suma");
+            seguntipo("Suma");
         }
         catch(Exception e)
         {

@@ -7,18 +7,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
-import java.nio.channels.InterruptedByTimeoutException;
-import java.util.ArrayList;
-
-public class EjerciciosActivity extends AppCompatActivity {
+public class EjerciciosMultiActivity extends AppCompatActivity {
 
     private EditText etr1,etr2,etr3, etr4, etr5, etr6;
     private Button btnop1, btnop2, btnop3, btnop4, btnop5, btnop6;
@@ -27,7 +22,7 @@ public class EjerciciosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ejercicios);
+        setContentView(R.layout.activity_ejercicios_multi);
 
         etr1 = (EditText)findViewById(R.id.etresultado1);
         etr2 = (EditText)findViewById(R.id.etresultado2);
@@ -44,7 +39,6 @@ public class EjerciciosActivity extends AppCompatActivity {
         btnop6 = (Button)findViewById(R.id.btnop6);
 
         mp = new MediaPlayer();
-
     }
 
     @Override
@@ -60,17 +54,17 @@ public class EjerciciosActivity extends AppCompatActivity {
         switch (item.getItemId())
         {
             case R.id.item_suma:
-            Intent i=new Intent(this, EjerciciosActivity.class);
-            startActivity(i);
-            return true;
+                Intent i=new Intent(this, EjerciciosActivity.class);
+                startActivity(i);
+                return true;
             case R.id.item_multi:
                 Intent iii=new Intent(this, EjerciciosMultiActivity.class);
                 startActivity(iii);
                 return true;
             case R.id.item_resta:
-            Intent ii=new Intent(this, EjerciciosRestaActivity.class);
-            startActivity(ii);
-            return true;
+                Intent ii=new Intent(this, EjerciciosRestaActivity.class);
+                startActivity(ii);
+                return true;
             case R.id.item_divi:
                 Intent iiii=new Intent(this, EjerciciosDiviActivity.class);
                 startActivity(iiii);
@@ -80,37 +74,28 @@ public class EjerciciosActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    public void showToolbar(String title, boolean upButton)
-    {
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(title);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
-    }
-
     public Boolean comprobar1(View view)
     {
-        return  (etr1.getText().toString().equals("13")) ? iscorrect(btnop1, etr1, etr2) : isincorrect(btnop1, etr1, etr2);
+        return  (etr1.getText().toString().equals("15")) ? iscorrect(btnop1, etr1, etr2) : isincorrect(btnop1, etr1, etr2);
     }
     public Boolean comprobar2(View view)
     {
-        return  (etr2.getText().toString().equals("10")) ? iscorrect(btnop2, etr2, etr3) : isincorrect(btnop2, etr2, etr3);
+        return  (etr2.getText().toString().equals("12")) ? iscorrect(btnop2, etr2, etr3) : isincorrect(btnop2, etr2, etr3);
     }
     public Boolean comprobar3(View view)
     {
-        return  (etr3.getText().toString().equals("42")) ? iscorrect(btnop3, etr3, etr4) : isincorrect(btnop3, etr3, etr4);
+        return  (etr3.getText().toString().equals("30")) ? iscorrect(btnop3, etr3, etr4) : isincorrect(btnop3, etr3, etr4);
     }
     public Boolean comprobar4(View view) {
-        return  (etr4.getText().toString().equals("40")) ? iscorrect(btnop4, etr4, etr5) : isincorrect(btnop4, etr4, etr5);
+        return  (etr4.getText().toString().equals("12")) ? iscorrect(btnop4, etr4, etr5) : isincorrect(btnop4, etr4, etr5);
     }
 
     public Boolean comprobar5(View view) {
-        return  (etr5.getText().toString().equals("41")) ? iscorrect(btnop5, etr5, etr6) : isincorrect(btnop5, etr5, etr6);
+        return  (etr5.getText().toString().equals("100")) ? iscorrect(btnop5, etr5, etr6) : isincorrect(btnop5, etr5, etr6);
     }
 
     public Boolean comprobar6(View view) {
-        return  (etr6.getText().toString().equals("48")) ? iscorrect(btnop6, etr6, etr6) : isincorrect(btnop6, etr6, etr6);
+        return  (etr6.getText().toString().equals("30")) ? iscorrect(btnop6, etr6, etr6) : isincorrect(btnop6, etr6, etr6);
     }
 
     public void verestadisticas(View view)
@@ -134,20 +119,20 @@ public class EjerciciosActivity extends AppCompatActivity {
         AdminSQLiteOpenHelper admin=new AdminSQLiteOpenHelper(this,"administracion",null,1);
         SQLiteDatabase bd = admin.getWritableDatabase();
 
-        Cursor fila = bd.rawQuery("SELECT correctas FROM operaciones WHERE nombre='suma'", null);
+        Cursor fila = bd.rawQuery("SELECT correctas FROM operaciones WHERE nombre='multi'", null);
         int n_correctas = 0;
 
         if (fila.moveToFirst()){
-           n_correctas = Integer.parseInt(fila.getString(0));
+            n_correctas = Integer.parseInt(fila.getString(0));
         }
 
         ContentValues registro_content = new ContentValues();
         registro_content.put("correctas",n_correctas+1);
-        int update = bd.update("operaciones",registro_content,"nombre='suma'",null);
+        int update = bd.update("operaciones",registro_content,"nombre='multi'",null);
 
         bd.close();
         if(update==1) {
-           // Toast.makeText(this, "Datos actualizados", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(this, "Datos actualizados", Toast.LENGTH_SHORT).show();
         }
         return true;
     }
@@ -167,7 +152,7 @@ public class EjerciciosActivity extends AppCompatActivity {
         AdminSQLiteOpenHelper admin=new AdminSQLiteOpenHelper(this,"administracion",null,1);
         SQLiteDatabase bd = admin.getWritableDatabase();
 
-        Cursor fila = bd.rawQuery("SELECT incorrectas FROM operaciones WHERE nombre='suma'", null);
+        Cursor fila = bd.rawQuery("SELECT incorrectas FROM operaciones WHERE nombre='multi'", null);
         int n_incorrectas = 0;
 
         if (fila.moveToFirst()){
@@ -176,16 +161,13 @@ public class EjerciciosActivity extends AppCompatActivity {
 
         ContentValues registro_content = new ContentValues();
         registro_content.put("incorrectas",n_incorrectas+1);
-        int update = bd.update("operaciones",registro_content,"nombre='suma'",null);
+        int update = bd.update("operaciones",registro_content,"nombre='multi'",null);
 
         bd.close();
         if(update==1) {
-           // Toast.makeText(this, "Datos actualizados", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(this, "Datos actualizados", Toast.LENGTH_SHORT).show();
         }
 
         return false;
     }
-
-
-
 }

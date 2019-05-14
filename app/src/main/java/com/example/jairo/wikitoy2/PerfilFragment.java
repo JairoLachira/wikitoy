@@ -8,8 +8,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -31,7 +33,7 @@ public class PerfilFragment extends Fragment {
     private String mParam2;
 
     private EditText tvnameUser1;
-
+    private Button btnActualizar;
     private OnFragmentInteractionListener mListener;
 
     public PerfilFragment() {
@@ -72,8 +74,22 @@ public class PerfilFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_perfil, container, false);
         SharedPreferences prefs = getContext().getSharedPreferences("Share", Context.MODE_PRIVATE );
         tvnameUser1 = (EditText) v.findViewById(R.id.tvnameUser);
-
+        btnActualizar = (Button)v.findViewById(R.id.btnActualizar);
         tvnameUser1.setText(prefs.getString("nombreuser","").toString());
+
+        btnActualizar.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    SharedPreferences prefs =  getContext().getSharedPreferences("Share", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString("nombreuser",tvnameUser1.getText().toString());
+                    editor.commit();
+                    Toast.makeText(getContext(),"Nombre actualizado", Toast.LENGTH_SHORT).show();
+                    tvnameUser1.setText(prefs.getString("nombreuser","").toString());
+                }
+            }
+        );
 
         return v;
     }
@@ -84,6 +100,8 @@ public class PerfilFragment extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
+
+
 
     @Override
     public void onAttach(Context context) {

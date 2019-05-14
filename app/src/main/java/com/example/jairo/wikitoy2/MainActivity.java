@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements
             }
         });
 
-        showToolbar("Hola " + prefs.getString("nombreuser",""), false);
+        showToolbar("Wititoy", false);
     }
 
     public void showToolbar(String title, boolean upButton)
